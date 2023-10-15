@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_airbnb_app_2/components/common/common_form_field.dart';
+import 'package:flutter_airbnb_app_2/components/common/date_form_field.dart';
 import 'package:flutter_airbnb_app_2/constants.dart';
 import 'package:flutter_airbnb_app_2/size.dart';
 import 'package:flutter_airbnb_app_2/styles.dart';
@@ -63,11 +64,11 @@ class HomeHeaderForm extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: CommonFormField(prefixText: "체크인", hintText: "날짜 입력"),
+              child: DateFormField(prefixText: "체크인", hintText: "날짜 입력"),
             ),
             SizedBox(width: gap_s),
             Expanded(
-              child: CommonFormField(prefixText: "체크 아웃", hintText: "날짜 입력"),
+              child: DateFormField(prefixText: "체크 아웃", hintText: "날짜 입력"),
             ),
           ],
         ),
